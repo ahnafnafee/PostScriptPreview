@@ -1,81 +1,81 @@
 {
-	"name": "postscript-preview",
-	"displayName": "PostScript Preview",
-	"description": "PostScript Preview is an extension that helps to preview EPS and PS files in Visual Studio Code.",
-	"version": "0.4.1",
-	"icon": "images/logo.png",
-	"publisher": "ahnafnafee",
-	"engines": {
-		"vscode": "^1.46.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"author": {
-		"name": "Ahnaf An Nafee",
-		"email": "ahnafnafee@gmail.com"
-	},
-	"galleryBanner": {
-		"color": "#4B7D78",
-		"theme": "dark"
-	},
-	"keywords": [
-		"postscript",
-		"ghostscript",
-		"ps",
-		"preview"
-	],
-	"activationEvents": [
-		"onCommand:postscript-preview.sidePreview",
-		"onLanguage:postscript"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "postscript-preview.sidePreview",
-				"title": "Preview PostScript",
-				"icon": "$(open-preview)"
-			}
-		],
-		"menus": {
-			"editor/title": [
-				{
-					"when": "resourceLangId == postscript",
-					"command": "postscript-preview.sidePreview",
-					"group": "navigation"
-				}
-			]
-		}
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"lint": "eslint src --ext ts",
-		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile && npm run lint",
-		"test": "node ./out/test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/glob": "^7.1.3",
-		"@types/mocha": "^7.0.2",
-		"@types/node": "^13.11.0",
-		"@types/vscode": "^1.46.0",
-		"@typescript-eslint/eslint-plugin": "^4.33.0",
-		"@typescript-eslint/parser": "^4.33.0",
-		"eslint": "^7.32.0",
-		"glob": "^7.1.6",
-		"lodash": "^4.17.21",
-		"mocha": "^9.1.2",
-		"typescript": "^3.9.7",
-		"vscode-test": "^1.3.0"
-	},
-	"dependencies": {
-		"@types/temp": "^0.8.34",
-		"temp": "^0.9.1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ahnafnafee/PostScript-Preview.git"
-	}
+    "name": "postscript-preview",
+    "displayName": "PostScript Preview",
+    "description": "PostScript Preview is an extension that helps to preview EPS and PS files in Visual Studio Code.",
+    "version": "0.4.1",
+    "icon": "images/logo.png",
+    "publisher": "ahnafnafee",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "author": {
+        "name": "Ahnaf An Nafee",
+        "email": "ahnafnafee@gmail.com"
+    },
+    "galleryBanner": {
+        "color": "#4B7D78",
+        "theme": "dark"
+    },
+    "keywords": [
+        "postscript",
+        "ghostscript",
+        "ps",
+        "preview"
+    ],
+    "activationEvents": [
+        "onCommand:postscript-preview.sidePreview",
+        "onLanguage:postscript"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "postscript-preview.sidePreview",
+                "title": "Preview PostScript",
+                "icon": "$(open-preview)"
+            }
+        ],
+        "menus": {
+            "editor/title": [
+                {
+                    "when": "resourceLangId == postscript",
+                    "command": "postscript-preview.sidePreview",
+                    "group": "navigation"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "lint": "eslint src --ext ts",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/glob": "^7.1.3",
+        "@types/mocha": "^7.0.2",
+        "@types/node": "^13.11.0",
+        "@types/vscode": "^1.46.0",
+        "@typescript-eslint/eslint-plugin": "^4.33.0",
+        "@typescript-eslint/parser": "^4.33.0",
+        "eslint": "^7.32.0",
+        "glob": "^7.1.6",
+        "lodash": "^4.17.21",
+        "mocha": "^9.1.2",
+        "typescript": "^3.9.7",
+        "vscode-test": "^1.3.0"
+    },
+    "dependencies": {
+        "@types/temp": "^0.8.34",
+        "temp": "^0.9.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ahnafnafee/PostScript-Preview.git"
+    }
 }
